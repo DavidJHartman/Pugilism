@@ -18,7 +18,7 @@ var shoot_time=99999 #time since last shot
 var anim=""
 
 #cache the sprite here for fast access (we will set scale to flip it often)
-onready var sprite = $sprite
+onready var sprite = $Sprite
 
 func _physics_process(delta):
 	#increment counters

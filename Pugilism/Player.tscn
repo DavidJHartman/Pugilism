@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/TestCharacter-sheet.png" type="Texture" id=2]
-[ext_resource path="res://tileset1.tres" type="TileSet" id=3]
+[ext_resource path="res://Sprites/TestCharacter.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -10,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 10.6226
 height = 6.17629
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Player" type="KinematicBody2D"]
 
 position = Vector2( 5.89119, 2.19353 )
 input_pickable = false
@@ -29,25 +28,5 @@ shape = SubResource( 1 )
 texture = ExtResource( 2 )
 centered = false
 _sections_unfolded = [ "Animation", "Offset" ]
-
-[node name="TileMap" type="TileMap" parent="." index="2"]
-
-mode = 0
-tile_set = ExtResource( 3 )
-cell_size = Vector2( 64, 64 )
-cell_quadrant_size = 16
-cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-cell_half_offset = 2
-cell_tile_origin = 0
-cell_y_sort = false
-cell_clip_uv = false
-collision_use_kinematic = false
-collision_friction = 1.0
-collision_bounce = 0.0
-collision_layer = 1
-collision_mask = 1
-occluder_light_mask = 1
-format = 1
-tile_data = PoolIntArray(  )
 
 
