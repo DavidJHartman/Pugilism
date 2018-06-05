@@ -10,7 +10,7 @@ source_file="res://tile1.png"
 source_md5="c3735dfda6c43723b0836867671ddb3a"
 
 dest_files=[ "res://.import/tile1.png-7a4797dc4a8b537cff028bd225d5a74a.stex" ]
-dest_md5="c033b342eff64416151e7e4caaf82ac5"
+dest_md5="69e79d9304223288d6a872b9edaa5f02"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,5 +28,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

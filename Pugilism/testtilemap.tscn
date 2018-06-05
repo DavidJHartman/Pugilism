@@ -5,22 +5,27 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+extents = Vector2( 8, 8 )
 
-[node name="0" type="Sprite" index="0"]
+[node name="Node" type="Node" index="0"]
 
-position = Vector2( 0, -0.13176 )
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
 texture = ExtResource( 1 )
+centered = false
+_sections_unfolded = [ "Animation", "Offset" ]
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="." index="0"]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="Sprite" index="0"]
 
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/KinematicBody2D" index="0"]
 
+position = Vector2( 8, 8 )
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform", "Z Index" ]
 
 
